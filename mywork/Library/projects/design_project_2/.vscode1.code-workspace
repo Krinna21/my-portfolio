@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".vscode"
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": "styles"
+		},
+		{
+			"path": "vendor"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vendor"
+	}
+}

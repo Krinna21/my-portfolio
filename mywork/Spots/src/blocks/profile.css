@@ -1,0 +1,228 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+}
+
+.profile__avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile__avatar {
+  height: 190px;
+  width: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.profile__avatar:hover {
+  filter: brightness(0.7);
+}
+
+.profile__avatar-btn {
+  position: absolute;
+  top: 162px;
+  left: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding-bottom: 12px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 8px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  z-index: 2;
+}
+
+.profile__avatar-container:hover .profile__avatar,
+.profile__avatar-container:hover .profile__avatar-btn {
+  opacity: 1;
+}
+
+.profile__avatar-btn::after {
+  content: "Edit Avatar";
+  color: #ffffff;
+  z-index: 1;
+}
+
+.profile__avatar-container:hover .profile__avatar-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.profile__name {
+  margin: 0 0 12px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 288px;
+}
+
+.profile__description {
+  margin: 0 0 114px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__edit-btn {
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.profile__edit-btn:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.profile__add-btn {
+  padding: 1px 6px 1px 25px;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  background-color: black;
+  color: #fcf5e5;
+  width: 149px;
+  height: 52px;
+  margin-top: 138px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .profile__avatar-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .profile__pencile-icon {
+    margin: 0 0 4px 8px;
+  }
+
+  .profile__avatar-btn {
+    visibility: hidden;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 52px;
+    left: 52px;
+    border-radius: 6px;
+    opacity: 60%;
+    background: black;
+    padding: 0;
+  }
+
+  .profile__avatar-container:hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .profile__avatar-btn::after {
+    content: "";
+  }
+
+  .profile__avatar {
+    margin: 0 0 12px;
+    padding-right: 0;
+    height: 80px;
+    width: 80px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    margin-bottom: 6px;
+    max-width: 288px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .profile__column {
+    margin: 0 0 20px;
+  }
+
+  .profile__add-btn {
+    margin: 0;
+    width: 100%;
+    width: 288px;
+    height: 52px;
+  }
+
+  .profile__description {
+    margin: 0 0 32px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__edit-btn {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile__add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

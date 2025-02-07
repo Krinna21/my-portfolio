@@ -1,0 +1,6 @@
+[submodule "projects/design_project_1"]
+	path = projects/design_project_1
+	url = https://github.com/Krinna21/Coffeeshop.git
+[submodule "projects/design_project_2"]
+	path = projects/design_project_2
+	url = https://github.com/Krinna21/Library.git
