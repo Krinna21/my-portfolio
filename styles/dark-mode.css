@@ -1,0 +1,44 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.header.dark-mode {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.header__cta.dark-mode {
+  background-color: #ff4d4d;
+}
+
+/* Adjust the button colors for dark mode */
+.theme-toggle {
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle__icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+
+.theme-toggle .moon {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .sun {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .moon {
+  display: inline-block;
+}

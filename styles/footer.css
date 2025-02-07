@@ -1,0 +1,29 @@
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.footer__socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer__socials li {
+  display: inline;
+}
+
+.footer__socials a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__socials a:hover {
+  text-decoration: underline;
+}

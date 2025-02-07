@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krinna Patel Portfolio</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+
+  <body class="page">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Krinna Patel</h1>
+      <p class="header__subtitle">Software Engineer</p>
+      <a href="#projects" class="header__cta nav__link">View My Work</a>
+      <button class="theme-toggle">
+        <img
+          src="./images/sun.svg"
+          alt="Sun Icon"
+          class="theme-toggle__icon sun"
+        />
+        <img
+          src="./images/moon.svg"
+          alt="Moon Icon"
+          class="theme-toggle__icon moon"
+        />
+      </button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        Passionate about creating innovative and user-friendly digital
+        experiences.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="filters">
+        <button class="filter__button active" data-filter="all">All</button>
+        <button class="filter__button" data-filter="web">Web</button>
+        <button class="filter__button" data-filter="design">Design</button>
+      </div>
+      <div class="projects__grid">
+        <div class="project design">
+          <h3>
+            <a href="./mywork/Coffeeshop" target="_blank">Design Project 1</a>
+          </h3>
+          <p>Innovative design project description.</p>
+        </div>
+        <div class="project design">
+          <h3>
+            <a href="./mywork/Library" target="_blank">Design Project 2</a>
+          </h3>
+          <p>Innovative design project description.</p>
+        </div>
+        <div class="project web">
+          <h3>
+            <a href="./mywork/Spots/dist/index.html" target="_blank"
+              >Web Project 1</a
+            >
+          </h3>
+          <p>Another fantastic web project description.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills__list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>UI/UX </span>
+        <span>GitHub</span>
+        <span>Git</span>
+        <span>Figma</span>
+        <span>VSCode</span>
+        <span>nodes.js</span>
+        <span>Webpack</span>
+        <span>NPM</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+      <form class="contact__form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Krinna Patel. All Rights Reserved.</p>
+      <ul class="footer__socials">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+
+    <script src="/pages/index.js"></script>
+  </body>
+</html>

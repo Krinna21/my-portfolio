@@ -1,0 +1,44 @@
+/* Header */
+.header {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+}
+
+.header__cta {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff4d4d;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header__cta:hover {
+  background-color: #ff1a1a;
+}
+
+/* Ensure header adapts to dark mode */
+body.dark-mode .header {
+  background: linear-gradient(to right, #2a2a2a, #1e1e1e);
+  color: white;
+}
+
+header,
+.header__title,
+.header__subtitle {
+  transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,68 @@
+@import url("../styles/header.css");
+@import url("../styles/about.css");
+@import url("../styles/projects.css");
+@import url("../styles/contact.css");
+@import url("../styles/dark-mode.css");
+@import url("../styles/footer.css");
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .header {
+  background: linear-gradient(to right, #2a2a2a, #1e1e1e);
+  color: white;
+}
+
+/* Ensure header adapts to dark mode */
+body.dark-mode .header {
+  background: linear-gradient(to right, #2a2a2a, #1e1e1e);
+  color: white;
+}
+
+/* Ensure text in skills bubbles is visible */
+body.dark-mode .skills__list span {
+  background: #333;
+  color: white;
+}
+
+/* General font color fix for dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
